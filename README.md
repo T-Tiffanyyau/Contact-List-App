@@ -1,17 +1,40 @@
-# Assignment 2: Contact List App
+# Contact List App
 
-### 1. Contacts contain a name, an email address, and a phone number
-### 2. The user must be able to enter contact info and save a new contact.
-<img width="171" alt="Screenshot 2024-02-03 at 2 29 26 AM" src="https://github.com/CS4530-S024/assignment-2-contact-list-app-T-Tiffanyyau/assets/72581946/bcecb314-17e0-4f9b-a15c-ddbba79b2735">
+This is a simple yet powerful Contact List application for Android, designed to help you manage your contacts efficiently. It's built using Android Studio with Kotlin and follows the Model-View-ViewModel (MVVM) architectural pattern for a robust and maintainable codebase.
 
-### 3. The user must be able to delete an existing contact
-### 4. The app must show a scrollable list containing the names of each contact
-<img width="175" alt="Screenshot 2024-02-03 at 2 30 54 AM" src="https://github.com/CS4530-S024/assignment-2-contact-list-app-T-Tiffanyyau/assets/72581946/fe471541-1c09-4ceb-b62a-0e5276c1ca72">
+## Installation
 
-### 5. portrait mode 
-<img width="337" alt="Screenshot 2024-02-03 at 2 32 07 AM" src="https://github.com/CS4530-S024/assignment-2-contact-list-app-T-Tiffanyyau/assets/72581946/5c458fd4-9d32-462a-994a-6d46540962ec">
+To run this project, you'll need to have Android Studio installed on your development machine.
 
-### 5. My app only has a single activity: MainActivity.
-### 6. My app has 2 Fragments MainFragment and IndividualContactFragment
-### 7. My app uses the MVVM architecture to store/update/view the contact data (ContactListViewModel)
-### 8. My app use a RecyclerView to render the list of contact names (Contact list items)
+1. Clone this repository or download the zip file.
+2. Open Android Studio and select 'Open an existing Android Studio project'.
+3. Navigate to the downloaded project and open it.
+4. Wait for Android Studio to sync the project with gradle files.
+5. Press the 'Run' button (or use `Shift + F10`) to build and run the app on your device or emulator.
+
+## Features
+
+- **Manage Contacts:** Users can create, view, and delete contacts. Each contact consists of a name, an email address, and a phone number.
+- **Ease of Use:** The app has a user-friendly interface with a single `MainActivity` that hosts two Fragments: `MainFragment` and `IndividualContactFragment`.
+- **Data Handling:** Contact data is handled in the MVVM architecture with a dedicated `ContactsListViewModel`.
+- **UI Components:** A `RecyclerView` is used to render and manage the list of contact names efficiently.
+
+## Usage
+
+- **Adding a New Contact:** Tap on the '+' icon to add a new contact. Enter the name, email, and phone number, and save.
+- **Viewing Contacts:** All your contacts are listed in the main screen. Scroll through the list to view them.
+- **Deleting a Contact:** Swipe a contact left or right to delete it from your list.
+
+## Orientation Support
+
+The app supports both portrait and landscape modes, adjusting the layout to provide the best user experience.
+
+## Project Structure
+
+- `MainActivity`: The main screen of the app.
+- `MainFragment`: Displays the list of contacts.
+- `IndividualContactFragment`: Handles the addition of new contacts and displays individual contact details.
+- `ContactsListViewModel`: Responsible for preparing and managing the data for `MainFragment` and `IndividualContactFragment`.
+- `RecyclerView`: Used for displaying the list of contacts efficiently.
+
+Last Updated: March 2, 2024
